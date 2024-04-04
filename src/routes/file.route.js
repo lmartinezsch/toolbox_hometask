@@ -6,6 +6,7 @@ const router = express.Router()
 const fileService = new FileService()
 const fileController = new FileController(fileService)
 
-router.get('/data', fileController.getFiles)
+router.get('/data', fileController.getDataFiles)
+router.get('/list', fileController.getFileList)
 
 module.exports = router

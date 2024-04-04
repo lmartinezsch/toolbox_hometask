@@ -2,16 +2,20 @@ const FileClient = require('../external/file.client')
 
 class FileService {
 
-    async getData() {
+    async getData(fileName) {
         const fileNames = await this.getFileNames()
-        const responses = await Promise.all(fileNames.map(name => this.getFileData(name)))
+        let responses = await Promise.all(fileNames.files.map(name => this.getFileData(name)))
+
+        if (fileName) {
+            responses = responses.flat().filter(response => response.file === fileName);
+        }
+
         return responses.flat()
     }
 
     async getFileNames() {
         try {
-            const {files} = await FileClient.getFileNames()
-            return files
+            return FileClient.getFileNames()
         } catch (e) {
             throw new Error(e)
         }
