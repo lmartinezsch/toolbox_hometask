@@ -1,0 +1,28 @@
+# dependencies
+node_modules
+
+# dotenv environment variables file
+.env
+
+*.private
+
+# OS
+.DS_Store
+
+# Mongo data
+/mongo-data
+
+# production
+/dist
+
+#doc
+/docs/.vuepress/dist
+
+# InteliJ IDE config
+.idea/
+
+# VSCODE
+.vscode/*
+
+# Test
+test/coverage/*
