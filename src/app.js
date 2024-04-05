@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const dotenv = require('dotenv');
-const fileRoutes = require('./routes/file.route');
+const routes = require('./routes');
 
 // Initialize configuration
 dotenv.config();
@@ -17,7 +17,7 @@ app.use(helmet()); // Enable Helmet
 app.use(express.json()); // Enable JSON body parser
 
 // Use routes
-app.use('/files', fileRoutes);
+app.use(routes);
 
 app.listen({ port }, () => {
   console.log(`🚀 Server ready at http://localhost:${port}`);

@@ -1,4 +1,4 @@
-const { NotFoundError } = require('../errors/errors');
+const { NotFoundError } = require('./errors/errors');
 
 class FileController {
   constructor(fileService) {
