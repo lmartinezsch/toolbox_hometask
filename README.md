@@ -27,7 +27,8 @@ npm install
 ## Running the Project
 To start the development server, run the following command:
 
-```npm start
+```
+npm start
 ```
 
 The server will be available at `http://localhost:3001`.
