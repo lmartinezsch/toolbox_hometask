@@ -1,4 +1,4 @@
-const { NotFoundError } = require('./errors/errors');
+import { NotFoundError } from './errors/errors.js';
 
 class FileController {
   constructor(fileService) {
@@ -33,4 +33,4 @@ class FileController {
   };
 }
 
-module.exports = FileController;
+export default FileController;

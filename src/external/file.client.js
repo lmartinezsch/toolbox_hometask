@@ -1,4 +1,4 @@
-const axios = require('axios');
+import axios from 'axios';
 
 class FileClient {
   static async getFileNames() {
@@ -24,4 +24,4 @@ class FileClient {
   }
 }
 
-module.exports = FileClient;
+export default FileClient;

@@ -1,8 +1,8 @@
-const express = require('express');
-const fileRoutes = require('./file.route');
+import express from 'express';
+import fileRoutes from './file.route.js';
 
 const router = express.Router();
 
 router.use('/files', fileRoutes);
 
-module.exports = router;
+export default router;

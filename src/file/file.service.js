@@ -1,4 +1,4 @@
-const FileClient = require('../external/file.client');
+import FileClient from '../external/file.client.js';
 
 class FileService {
   async getData(fileName) {
@@ -54,4 +54,4 @@ class FileService {
   }
 }
 
-module.exports = FileService;
+export default FileService;
