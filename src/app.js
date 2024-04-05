@@ -19,7 +19,6 @@ app.use(express.json()); // Enable JSON body parser
 // Use routes
 app.use('/files', fileRoutes);
 
-
-app.listen({port}, () => {
-    console.log(`🚀 Server ready at http://localhost:${port}`);
+app.listen({ port }, () => {
+  console.log(`🚀 Server ready at http://localhost:${port}`);
 });
