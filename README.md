@@ -1,15 +1,15 @@
 # Toolbox Home Task
 
-Este proyecto es parte de la tarea de Toolbox y se enfoca en el desarrollo de una API para interactuar con archivos y datos externos.
+This project is part of the Toolbox task and focuses on developing an API to interact with files and external data.
 
-## Requisitos previos
+## Prerequisites
 
-Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde [aquí](https://nodejs.org/).
+Make sure you have Node.js installed on your system. You can download it from [here](https://nodejs.org/).
 
-## Configuración inicial
+## Initial Setup
 
-1. Clona este repositorio en tu máquina local usando `git clone`.
-2. Crea un archivo `.env` en la raíz del proyecto con la siguiente configuración:
+1. Clone this repository to your local machine using `git clone`.
+2. Create a `.env` file in the root of the project with the following configuration:
 
    ```plaintext
    APP_PORT=3001
@@ -17,18 +17,18 @@ Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde [a
    TBX_EXTERNAL_TOKEN="Bearer aSuperSecretKey"
     ```
 
-## Instalación de dependencias
-Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+## Installing Dependencies
+Run the following command to install the project dependencies:
 
 ```
 npm install
 ```
 
-## Ejecutar el proyecto
-Para iniciar el servidor de desarrollo, ejecuta el siguiente comando:
+## Running the Project
+To start the development server, run the following command:
 
 ```npm start
 ```
 
-El servidor estará disponible en http://localhost:3001.
+The server will be available at `http://localhost:3001`.
 
